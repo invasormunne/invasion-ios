@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
+
+body {
+  background-color: black;
+  font-family: 'Teko', sans-serif;
+  color: #ffe2ca;
+}
+
+.row {
+  background: #f35343;
+}
+
+h1, h2, li {
+  color: #ffe2ca;
+}
+
+header {
+  padding: 10px;
+}
+
+.texto-disco, .ficha-tecnica {
+  padding-left: 2%;
+}
+
+a {
+  overflow: hidden;
+  color: #000;
+}
+
+.btn-info{
+  color: #ffe2ca;
+background-color: #54b19c;
+border-color: #54b19c;
+}
+
+.btn-info:active{
+  outline: none !important;
+box-shadow: none !important;
+  color: black !important;
+background-color: #359480 !important;
+border-color: #359480 !important;
+}
+.btn-info:hover{
+  color: #ffe2ca;
+background-color: #359480;
+border-color: #359480;
+}
+.btn-info:focus{
+  outline: none !important;
+box-shadow: none !important;
+  color: #ffe2ca;
+background-color: #359480;
+border-color: #359480;
+}
+
+img {
+  padding: 3px;
+}
+
+footer {
+  line-height: 1vh;
+  color: #000;
+  font-size: 1vh;
+  text-align: justify;
+}
+
+.inner {
+  display: inline-block;
+  overflow: hidden;
+}
+.inner img {
+  display: block;
+  transition: all 1.5s ease;
+  padding: 0;
+}
+.inner:hover img {
+  transform: scale(1.2);
+  transform-origin: 50% 50%;
+}
+
+.container-fluid, .container {
+  margin: 8% auto;
+}
+
+.derechosDeAutor {
+  padding: 1vh;
+  width: 100%;
+}

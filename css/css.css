@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
+
+html {
+  height: 100%;
+  margin: 0px auto;
+}
+
+body {
+  background-color: black;
+  font-family: 'Teko', sans-serif;
+  color: #ffe2ca;
+  margin: 0;
+  padding: 0;
+  overscroll-behavior: none;
+
+}
+.container-fluid, .container {
+  margin: 0px auto;
+  padding: 0px;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+a, button{
+  width: 100%;
+}
+
+canvas{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* --------- */
+.btn-danger{
+  color: #ffe2ca;
+  background-color: #f35343;
+  border-color: #f35343;
+}
+.btn-danger:active{
+  color: black !important;
+  background-color: #de3f34 !important;
+  border-color: #de3f34 !important;
+}
+.btn-danger:hover{
+  color: #ffe2ca;
+  background-color: #de3f34;
+  border-color: #de3f34;
+}
+.btn-danger:focus{
+  color: #ffe2ca;
+  background-color: #de3f34;
+  border-color: #de3f34;
+}
+/* ------- */
+
+.btn-warning{
+  color: #ffe2ca;
+  background-color: #714870;
+  border-color: #714870;
+}
+.btn-warning:active{
+  color: black !important;
+  background-color: #5d355c !important;
+  border-color: #5d355c !important;
+}
+.btn-warning:hover{
+  color: #ffe2ca;
+  background-color: #5d355c;
+  border-color: #5d355c;
+}
+.btn-warning:focus{
+  color: #ffe2ca;
+  background-color: #5d355c;
+  border-color: #5d355c;
+}
+/* --------- */
+
+.btn-info{
+  color: #ffe2ca;
+  background-color: #54b19c;
+  border-color: #54b19c;
+}
+
+.btn-info:active{
+  outline: none !important;
+  box-shadow: none !important;
+  color: black !important;
+  background-color: #359480 !important;
+  border-color: #359480 !important;
+}
+.btn-info:hover{
+  color: #ffe2ca;
+  background-color: #359480;
+  border-color: #359480;
+}
+.btn-info:focus{
+  outline: none !important;
+  box-shadow: none !important;
+  color: #ffe2ca;
+  background-color: #359480;
+  border-color: #359480;
+}
