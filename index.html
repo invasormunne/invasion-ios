@@ -38,7 +38,7 @@
 								</div>
 							</div>
 							<div class="texto-disco mt-3">
-								<h1>La Verdadera Invasión</h1>
+								<h1>Invasión Rap</h1>
 								<h2>Instrucciones:</h2>
 								<ul>
 									<li>Haga click en la mano para iniciar.</li>
@@ -58,6 +58,8 @@
 									<li>Grabado en distintos universos</li>
 									<li>Producido durante la cuarentena del 2020 por Invasor Records</li>
 									<li>Arte de tapa: Zoelandia</li>
+									<li>Una idea original de Munné</li>
+									<li>Agradecimientos: A mis compas de Floresta, la gente de la Untref, Juan X, Hernán Kerlleñevich, Kevin Herzog, Lucas Medina, Ignacio Guerra</li>
 								</ul>
 							</div>
 						</div>
