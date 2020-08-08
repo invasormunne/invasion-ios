@@ -29,9 +29,9 @@ function init() {
       'loops/rap/r3.mp3',
       'loops/rap/r4.mp3',
       'loops/rap/r5.mp3',
-      'loops/rap/r6.mp3'
-      // 'loops/7.mp3',
-      // 'loops/8.mp3',
+      'loops/rap/r6.mp3',
+      'loops/rap/r7.mp3',
+      'loops/rap/r8.mp3'
     ],
     finishedLoading
     );
@@ -66,9 +66,11 @@ function finishedLoading(bufferList) {
   var gainNodeRap4 = audioContext.createGain();
   var gainNodeRap5 = audioContext.createGain();
   var gainNodeRap6 = audioContext.createGain();
+  var gainNodeRap7 = audioContext.createGain();
+  var gainNodeRap8 = audioContext.createGain();
 
   var multiGain = [
-  gainNode0, gainNode1, gainNode2, gainNode3, gainNode4, gainNode5, gainNode6, gainNode7, gainNode8, gainNodeLead,  gainNodeRap0,  gainNodeRap1,  gainNodeRap2,  gainNodeRap3,  gainNodeRap4,  gainNodeRap5,  gainNodeRap6
+  gainNode0, gainNode1, gainNode2, gainNode3, gainNode4, gainNode5, gainNode6, gainNode7, gainNode8, gainNodeLead, gainNodeRap0, gainNodeRap1, gainNodeRap2, gainNodeRap3,  gainNodeRap4, gainNodeRap5, gainNodeRap6, gainNodeRap7, gainNodeRap8
   ]
 
   // this is matrix allows you to set the gain for especific coords
@@ -81,7 +83,7 @@ function finishedLoading(bufferList) {
   // this array goes random later
 
   var rapSounds =
-  [gainNodeRap0, gainNodeRap1, gainNodeRap2, gainNodeRap3, gainNodeRap4, gainNodeRap5, gainNodeRap6];
+  [gainNodeRap0, gainNodeRap1, gainNodeRap2, gainNodeRap3, gainNodeRap4, gainNodeRap5, gainNodeRap6, gainNodeRap7, gainNodeRap8];
 
   // set the start volume as 0 or mute
   var initialVol = 0;
@@ -109,8 +111,10 @@ function finishedLoading(bufferList) {
   var  sourceR4 = audioContext.createBufferSource();
   var  sourceR5 = audioContext.createBufferSource();
   var  sourceR6 = audioContext.createBufferSource();
+  var  sourceR7 = audioContext.createBufferSource();
+  var  sourceR8 = audioContext.createBufferSource();
 
-  var source = [ source0, source1, source2, source3, source4, source5, source6, source7, source8, sourceLead, sourceR0, sourceR1, sourceR2, sourceR3, sourceR4, sourceR5, sourceR6]
+  var source = [ source0, source1, source2, source3, source4, source5, source6, source7, source8, sourceLead, sourceR0, sourceR1, sourceR2, sourceR3, sourceR4, sourceR5, sourceR6, sourceR7, sourceR8]
 
   // connecting buffer to gain and audio context
   for (var i = 0; i < bufferList.length; i++) {
@@ -220,8 +224,8 @@ function coordsT(e){
 
 }
 
-var volumenLead = 0.3;
-var volumenRap = 0.3;
+var volumenLead = 0.25;
+var volumenRap = 0.25;
 
 const click = document.querySelector('body');
 body.addEventListener("mousedown", mouseDown);

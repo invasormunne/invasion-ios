@@ -44,8 +44,9 @@
 									<li>Haga click en la mano para iniciar.</li>
 									<li>Una vez dentro haga click en Load Audio y después en Play.</li>
 									<li>Al hacer click en esta nueva pantalla dibuje y escuche los raps.</li>
-									<li>Recorra con su mouse la pantalla.</li>
-									<li>Si está en su celular asegúrese de no tenerlo en silencio, se recomienda el uso de Google Chrome para un óptimo funcionamiento.</li>
+									<li>Recorra con su mouse la pantalla, si está en su celular haga doble click en cualquier parte de su pantalla para cambiar de instrumental.</li>
+									<li>Además en su celular asegúrese de no tenerlo silenciado, se recomienda el uso de Google Chrome para un óptimo funcionamiento.</li>
+
 
 								</ul>
 							</div>
@@ -53,7 +54,7 @@
 								<h3>Ficha Tecnica</h3>
 								<ul>
 									<li>Beats: Munné</li>
-									<li>Voces: Aleymu, Callandroll, Delni, Diley, Perro Galactico, Töt, Socre</li>
+									<li>Voces: Aleymu, Callandroll, Delni, Diley, Gaspix, Perro Galactico, Töt, Socre, Wh!tty Navi</li>
 									<li>Grabado en distintos universos</li>
 									<li>Producido durante la cuarentena del 2020 por Invasor Records</li>
 									<li>Arte de tapa: Zoelandia</li>
