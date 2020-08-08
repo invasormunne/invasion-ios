@@ -59,7 +59,7 @@
 									<li>Producido durante la cuarentena del 2020 por Invasor Records</li>
 									<li>Arte de tapa: Zoelandia</li>
 									<li>Una idea original de Munné</li>
-									<li>Agradecimientos: A mis compas de Floresta, la gente de la Untref, Juan X, Kevin Herzog, Lucas Medina, Ignacio Guerra, Leandro Garber e infaltable: toda mi familia!</li>
+									<li>Agradecimientos: A mis compas de Floresta, la gente de la Untref e infaltable: toda mi familia!</li>
 								</ul>
 							</div>
 						</div>
