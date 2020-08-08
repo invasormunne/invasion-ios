@@ -117,11 +117,9 @@ function finishedLoading(bufferList) {
     source[i].buffer = bufferList[i];
     source[i].connect(multiGain[i]);
     multiGain[i].connect(audioContext.destination);
-      // source[i].start(0);
-  }
-
-  for (var i = 0; i < source.length; i++) {
+    source[i].loop = true;
     source[i].start(0);
+
   }
 
   // select our restart button

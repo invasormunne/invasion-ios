@@ -45,6 +45,8 @@
 									<li>Una vez dentro haga click en Load Audio y después en Play.</li>
 									<li>Al hacer click en esta nueva pantalla dibuje y escuche los raps.</li>
 									<li>Recorra con su mouse la pantalla.</li>
+									<li>Si está en su celular asegúrese de no tenerlo en silencio, se recomienda el uso de Google Chrome para un óptimo funcionamiento.</li>
+
 								</ul>
 							</div>
 							<div class="ficha-tecnica">
