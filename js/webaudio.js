@@ -1,6 +1,9 @@
 
+window.onload = alert("Haga click en Load Audio y espere mientras se carga el disco.");
+// window.onload = init;
+// const loadAlbum = document.querySelector('#loadAudio');
+// loadAlbum.addEventListener('click', init());
 
-window.onload = init;
 var audioContext;
 var bufferLoader;
 var body = document.querySelector("body");
@@ -39,7 +42,11 @@ function init() {
   bufferLoader.load();
 }
 
+
+
 function finishedLoading(bufferList) {
+  alert("Ya puedes dar play, una vez hagas stop deberás hacer click en Load Audio para poder reiniciar el disco.");
+
   // Create a gain node
   var gainNode0 = audioContext.createGain();
   var gainNode1 = audioContext.createGain();
@@ -114,8 +121,6 @@ function finishedLoading(bufferList) {
       // source[i].start(0);
   }
 
-
-
   // select our restart button
   const restartButton = document.querySelector('#reiniciar');
   restartButton.addEventListener('click', function() {
@@ -143,17 +148,20 @@ function finishedLoading(bufferList) {
       gainNodeLead.gain.setValueAtTime(volumenLead, audioContext.currentTime);
 
       this.dataset.playing = 'true';
+}
+    // }
+     else if (this.dataset.playing === 'true') {
+      // for (var i = 0; i < source.length; i++) {
+      //
+      //   source[i].stop(0);
+      //
+      // }
 
-    } else if (this.dataset.playing === 'true') {
-      for (var i = 0; i < source.length; i++) {
-        source[i].stop(0);
-      }
-
-      this.dataset.playing = 'false';
+      // this.dataset.playing = 'false';
     }
   }, false);
 
-
+                          // From here we modify gain nodes
 
 // here we define the number of parts on our beat grid
 var sectionsX = 3;
@@ -256,7 +264,6 @@ function touchStarted() {
   points = [];
   clickT.ontouchmove = chooser().gain.setValueAtTime(volumenRap, audioContext.currentTime);
   // clickT.ontouchmove = chooserBeats().gain.setValueAtTime(volumenRap, audioContext.currentTime);
-
 }
 
 function touchEnded() {
