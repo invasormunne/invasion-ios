@@ -42,7 +42,7 @@
 								<h2>Instrucciones:</h2>
 								<ul>
 									<li>Haga click en la mano para iniciar.</li>
-									<li>Una vez dentro podrá darle play o pausa al disco.</li>
+									<li>Una vez dentro haga click en Load Audio y después en Play.</li>
 									<li>Al hacer click en esta nueva pantalla dibuje y escuche los raps.</li>
 									<li>Recorra con su mouse la pantalla.</li>
 								</ul>

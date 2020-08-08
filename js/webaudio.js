@@ -1,8 +1,5 @@
 
 window.onload = alert("Haga click en Load Audio y espere mientras se carga el disco.");
-// window.onload = init;
-// const loadAlbum = document.querySelector('#loadAudio');
-// loadAlbum.addEventListener('click', init());
 
 var audioContext;
 var bufferLoader;
@@ -45,7 +42,9 @@ function init() {
 
 
 function finishedLoading(bufferList) {
-  alert("Ya puedes dar play, una vez hagas stop deberás hacer click en Load Audio para poder reiniciar el disco.");
+  alert("Ya puedes dar play.");
+  audioContext.suspend(0);
+
 
   // Create a gain node
   var gainNode0 = audioContext.createGain();
@@ -121,15 +120,20 @@ function finishedLoading(bufferList) {
       // source[i].start(0);
   }
 
-  // select our restart button
-  const restartButton = document.querySelector('#reiniciar');
-  restartButton.addEventListener('click', function() {
-  document.getElementById('playStop').setAttribute('data-playing', 'false');
   for (var i = 0; i < source.length; i++) {
-    source[i].stop(0);
-    source[i].currentTime = 0;
+    source[i].start(0);
   }
-  });
+
+  // select our restart button
+  // const restartButton = document.querySelector('#reiniciar');
+  // restartButton.addEventListener('click', function() {
+  // document.getElementById('playStop').setAttribute('data-playing', 'false');
+  // for (var i = 0; i < source.length; i++) {
+  //   // source[i].stop(0);
+  //   audioContext.suspend(0);
+  //   source[i].currentTime = 0;
+  // }
+  // });
 
   // select our play button
   const playButton = document.querySelector('#playStop');
@@ -137,13 +141,13 @@ function finishedLoading(bufferList) {
 
     // check if context is in suspended state (autoplay policy)
     if (audioContext.state === 'suspended') {
+
       audioContext.resume();
+
     }
     // play or pause track depending on state
     if (this.dataset.playing === 'false') {
-      for (var i = 0; i < source.length; i++) {
-        source[i].start(0);
-      }
+
 
       gainNodeLead.gain.setValueAtTime(volumenLead, audioContext.currentTime);
 
@@ -151,13 +155,14 @@ function finishedLoading(bufferList) {
 }
     // }
      else if (this.dataset.playing === 'true') {
-      // for (var i = 0; i < source.length; i++) {
-      //
-      //   source[i].stop(0);
-      //
-      // }
+      for (var i = 0; i < source.length; i++) {
 
-      // this.dataset.playing = 'false';
+        // source[i].stop(0);
+        audioContext.suspend(0);
+
+      }
+
+      this.dataset.playing = 'false';
     }
   }, false);
 

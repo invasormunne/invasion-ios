@@ -4,7 +4,7 @@ paint = false;
 function setup(){
   createCanvas(window.innerWidth, window.innerHeight);
   background(0);
-var stop = select('#reiniciar');
+var stop = select('#playStop');
 stop.mousePressed(resetSketch);
 
 function resetSketch() {
@@ -42,22 +42,3 @@ function mousePressed(){
 function mouseReleased() {
   paint = false;
 }
-
-// function mouseDragged(){
-//     paint = true
-//     points = [];
-//   return false;
-//
-// }
-
-// function touchStarted(){
-//   paint = true
-//   points = [];
-//
-// // prevent default
-// // return false;
-// }
-//
-// function touchEnded(){
-//   paint = false;
-// }
